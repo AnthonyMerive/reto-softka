@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2';
 import data from '../data.json';
 import { useHistory } from "react-router-dom";
@@ -10,6 +10,8 @@ export default function NivelDos() {
     const history = useHistory();
     const dispatch = useDispatch();
 
+    const [respuesta, setRespuesta] = useState(null)
+
     const nivel = data.nivel2;
     const preg = parseInt(Math.random() * (6 - 1) + 1);
 
@@ -17,6 +19,7 @@ export default function NivelDos() {
 
     const handleRespuesta = (e) => {
         const respSelect = e.target.value;
+        setRespuesta(respSelect);
         Swal.fire({
             title: `Esta seguro de que la respuesta correcta es "${respSelect}"`,
             showCancelButton: false,
@@ -30,10 +33,30 @@ export default function NivelDos() {
                 Swal.fire('¡Incorrecto! lo ha perdido Todo', '', 'error')
                 history.replace('/')
             } else if (result.isDenied) {
-                Swal.fire('Aun tiene posibilidad de retirarse', '', 'info')
+                Swal.fire('Tiene la posibilidad de retirarse', '', 'info')
             }
         })
     }
+
+    const handleRetirar = () => {
+        Swal.fire({
+            title: `¿Esta seguro que desea retirarse? `,
+            showCancelButton: false,
+            showDenyButton: true,
+            confirmButtonText: 'Si',
+        }).then((result) => {
+            if (result.isConfirmed & respuesta.toLowerCase() === pregunta.correcta.toLowerCase()) {
+                Swal.fire('Que pena, habia seleccionado la respuesta correcta', '', 'info')
+                history.replace('/')
+            } else if (result.isConfirmed & respuesta.toLowerCase() !== pregunta.correcta.toLowerCase()) {
+                Swal.fire('Sabia decisión', '', 'success')
+                history.replace('/')
+            } else if (result.isDenied) {
+                Swal.fire('Asi es, no se rinda', '', 'success')
+            }
+        })
+    }
+
 
     useEffect(() => {
         dispatch(actualizaNumPreg(2))
@@ -106,6 +129,11 @@ export default function NivelDos() {
                 </div>
             </div>
             <hr />
+            <div className="d-flex align-items-center flex-column">
+                {respuesta &&
+                    <button onClick={handleRetirar} type="button" className="btn btn-outline-danger">RETIRARSE</button>
+                }
+            </div>
         </div>
 
     </>)
