@@ -10,10 +10,16 @@ import NivelUno from '../components/NivelUno';
 import NivelDos from '../components/NivelDos';
 import NivelTres from '../components/NivelTres';
 import NivelCuatro from '../components/NivelCuatro';
-import NivelCinco from '../components/NivelCinco'
+import NivelCinco from '../components/NivelCinco';
+import Navbar from '../components/Navbar'
 
 export default function AppRouter() {
+
+    let auth = true;
+
     return (<Router>
+
+        <Navbar auth={auth}/>
 
         <Switch>
 
