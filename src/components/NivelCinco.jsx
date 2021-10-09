@@ -4,6 +4,7 @@ import data from '../data.json';
 import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { actualizaNumPreg } from '../actions/actualizaNumPreg';
+import { actualizaAcumu } from '../actions/actualizaAcumulado';
 
 export default function NivelCinco() {
 
@@ -28,6 +29,7 @@ export default function NivelCinco() {
         }).then((result) => {
             if (result.isConfirmed & respSelect.toLowerCase() === pregunta.correcta.toLowerCase()) {
                 Swal.fire('¡Correcto!', '', 'success')
+                dispatch(actualizaAcumu(100000000))
                 history.replace('/pregunta5')
             } else if (result.isConfirmed & respSelect.toLowerCase() !== pregunta.correcta.toLowerCase()) {
                 Swal.fire('¡Incorrecto! lo ha perdido Todo', '', 'error')

@@ -13,7 +13,6 @@ export default function Inicio() {
 
     return (<>
         <div className="container mt-5">
-
             <h3 className="d-flex justify-content-center">
                 ¡HOLA {'USUARIO'}!
             </h3>
@@ -64,7 +63,13 @@ export default function Inicio() {
             <h4 className="d-flex justify-content-center">
                 <Link to="/pregunta1">{'->COMENZAR<-'}</Link>
             </h4>
-
+            <br />
+            <div className="d-flex justify-content-center">
+                <h4>
+                    lista de
+                </h4>
+                <h4 className="ms-1"><Link to="/ganadores">ganadores</Link></h4>
+            </div>
             <hr />
         </div>
     </>)

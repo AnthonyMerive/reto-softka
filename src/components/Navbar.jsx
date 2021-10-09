@@ -29,7 +29,7 @@ export default function Navbar(props) {
                                 <span className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">{'Jugador - '}</span>
                             }
                             {numeroPreg === 0 ?
-                                <StyledSpan className="nav-link">Historial</StyledSpan>
+                                <StyledSpan className="nav-link">Cerrar sesión</StyledSpan>
                                 : numeroPreg === 1 ?
                                     <span className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Pregunta 1 por $250.000</span>
                                     : numeroPreg === 2 ?

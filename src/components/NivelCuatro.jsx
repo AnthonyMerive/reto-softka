@@ -4,6 +4,7 @@ import data from '../data.json';
 import { useHistory } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { actualizaNumPreg } from '../actions/actualizaNumPreg';
+import { actualizaAcumu } from '../actions/actualizaAcumulado';
 
 export default function NivelCuatro() {
 
@@ -31,6 +32,7 @@ export default function NivelCuatro() {
                 history.replace('/pregunta5')
             } else if (result.isConfirmed & respSelect.toLowerCase() !== pregunta.correcta.toLowerCase()) {
                 Swal.fire('¡Incorrecto! lo ha perdido Todo', '', 'error')
+                dispatch(actualizaAcumu(10000000))
                 history.replace('/')
             } else if (result.isDenied) {
                 Swal.fire('Tiene la posibilidad de retirarse', '', 'info')
