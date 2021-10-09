@@ -1,0 +1,237 @@
+{
+    "nivel1": [
+        {
+            "id": 1,
+            "pregunta": "n1-pregunta-1",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta B"
+        },
+        {
+            "id": 2,
+            "pregunta": "n1-pregunta-2",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta D"
+        },
+        {
+            "id": 3,
+            "pregunta": "n1-pregunta-3",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        },
+        {
+            "id": 4,
+            "pregunta": "n1-pregunta-4",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta C"
+        },
+        {
+            "id": 5,
+            "pregunta": "n1-pregunta-5",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        }
+    ],
+    "nivel2": [
+        {
+            "id": 1,
+            "pregunta": "n2-pregunta-1",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta B"
+        },
+        {
+            "id": 2,
+            "pregunta": "n2-pregunta-2",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta D"
+        },
+        {
+            "id": 3,
+            "pregunta": "n2-pregunta-3",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        },
+        {
+            "id": 4,
+            "pregunta": "n2-pregunta-4",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta C"
+        },
+        {
+            "id": 5,
+            "pregunta": "n2-pregunta-5",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        }
+    ],
+    "nivel3": [
+        {
+            "id": 1,
+            "pregunta": "n3-pregunta-1",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta B"
+        },
+        {
+            "id": 2,
+            "pregunta": "n3-pregunta-2",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta D"
+        },
+        {
+            "id": 3,
+            "pregunta": "n3-pregunta-3",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        },
+        {
+            "id": 4,
+            "pregunta": "n3-pregunta-4",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta C"
+        },
+        {
+            "id": 5,
+            "pregunta": "n3-pregunta-5",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        }
+    ],
+    "nivel4": [
+        {
+            "id": 1,
+            "pregunta": "n4-pregunta-1",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta B"
+        },
+        {
+            "id": 2,
+            "pregunta": "n4-pregunta-2",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta D"
+        },
+        {
+            "id": 3,
+            "pregunta": "n4-pregunta-3",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        },
+        {
+            "id": 4,
+            "pregunta": "n4-pregunta-4",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta C"
+        },
+        {
+            "id": 5,
+            "pregunta": "n4-pregunta-5",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        }
+    ],
+    "nivel5": [
+        {
+            "id": 1,
+            "pregunta": "n5-pregunta-1",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta B"
+        },
+        {
+            "id": 2,
+            "pregunta": "n5-pregunta-2",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta D"
+        },
+        {
+            "id": 3,
+            "pregunta": "n5-pregunta-3",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        },
+        {
+            "id": 4,
+            "pregunta": "n5-pregunta-4",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta C"
+        },
+        {
+            "id": 5,
+            "pregunta": "n5-pregunta-5",
+            "respuesta1": "respuesta A",
+            "respuesta2": "respuesta B",
+            "respuesta3": "respuesta C",
+            "respuesta4": "respuesta D",
+            "correcta": "respuesta A"
+        }
+    ]
+}
