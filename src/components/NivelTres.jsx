@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Swal from 'sweetalert2';
 import data from '../data.json';
 import { useHistory } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { actualizaNumPreg } from '../actions/actualizaNumPreg';
 
 export default function NivelTres() {
+
     const history = useHistory();
+    const dispatch = useDispatch();
 
     const nivel = data.nivel3;
     const preg = parseInt(Math.random() * (6 - 1) + 1);
@@ -30,6 +34,10 @@ export default function NivelTres() {
             }
         })
     }
+
+    useEffect(() => {
+        dispatch(actualizaNumPreg(3))
+    }, [dispatch])
 
     return (<>
         <div className="container mt-5">
