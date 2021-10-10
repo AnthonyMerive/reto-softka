@@ -18,12 +18,7 @@ export default function Navbar(props) {
             <div className="container-fluid">
                 <span className="navbar-brand">JUEGA Y GANA</span>
                 <div className="d-flex align-items-end">
-                    {!props.auth ?
-                        <div className="navbar-nav">
-                            <StyledSpan className="nav-link">Registrate</StyledSpan>
-                            <StyledSpan className="nav-link">Ingresa</StyledSpan>
-                        </div>
-                        :
+                    {props.auth ?
                         <div className="navbar-nav">
                             {numeroPreg === 0 ?
                                 <span className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">{'Jugador'}</span>
@@ -36,6 +31,8 @@ export default function Navbar(props) {
                                 <span className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">${acumulado}</span>
                             }
                         </div>
+                        :
+                        <span className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Ingrese o Registrese</span>
                     }
                 </div>
             </div>

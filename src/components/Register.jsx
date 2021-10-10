@@ -5,7 +5,7 @@ export default function Register() {
             <div className="container m-5 p-5">
             <form>
             <h4 className="d-flex justify-content-center mb-4">
-                Registro
+                Registrate
             </h4>
             <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Nombre Completo</label>
