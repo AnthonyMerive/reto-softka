@@ -30,15 +30,8 @@ ejecute el comando, luego la pagina se desplegara en la direccion local: [http:/
 
 Si por algun motivo no se instalan las dependencias correctamente, use los siguientes comandos para instalarlas, las dependencias usadas son:
 
-- firebase
-- react-redux
-- react-router-dom
-- redux
-- redux-thunk
-- styled-components
-- sweetalert2
-
-### `npm i firebase` ### `yarn add firebase` 
+### `npm i firebase` 
+### `yarn add firebase` 
 
 Instala Firebase
 
