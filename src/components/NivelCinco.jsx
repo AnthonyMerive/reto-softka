@@ -33,6 +33,7 @@ export default function NivelCinco() {
                 history.replace('/pregunta5')
             } else if (result.isConfirmed & respSelect.toLowerCase() !== pregunta.correcta.toLowerCase()) {
                 Swal.fire('¡Incorrecto! lo ha perdido Todo', '', 'error')
+                dispatch(actualizaAcumu(0))
                 history.replace('/')
             } else if (result.isDenied) {
                 Swal.fire('Tiene la posibilidad de retirarse', '', 'info')
@@ -70,6 +71,9 @@ export default function NivelCinco() {
             <h3 className="d-flex justify-content-center">
                 ULTIMA PREGUNTA
             </h3>
+            <h5 className="d-flex justify-content-center">
+                por $100.000.000
+            </h5>
             <br />
             <hr />
             <h4 className="d-flex justify-content-center">

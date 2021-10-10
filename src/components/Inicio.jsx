@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { actualizaNumPreg } from '../actions/actualizaNumPreg'
 
 export default function Inicio() {
 
     const dispatch = useDispatch()
+    const acumu = useSelector(store => store.acumuladoVal)
+    const acumulado = acumu.acumulado
 
     useEffect(() => {
         dispatch(actualizaNumPreg(0))
@@ -60,9 +62,12 @@ export default function Inicio() {
                 </ul>
             </ul>
             <hr />
-            <h4 className="d-flex justify-content-center">
-                <Link to="/pregunta1">{'->COMENZAR<-'}</Link>
-            </h4>
+            {
+                acumulado===0&&
+                <h4 className="d-flex justify-content-center">
+                    <Link to="/pregunta1">{'->COMENZAR<-'}</Link>
+                </h4>
+            }
             <br />
             <div className="d-flex justify-content-center">
                 <h4>
@@ -70,6 +75,7 @@ export default function Inicio() {
                 </h4>
                 <h4 className="ms-1"><Link to="/ganadores">ganadores</Link></h4>
             </div>
+            <br />
             <hr />
         </div>
     </>)

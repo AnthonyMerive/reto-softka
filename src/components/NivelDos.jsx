@@ -33,6 +33,7 @@ export default function NivelDos() {
                 history.replace('/pregunta3')
             } else if (result.isConfirmed & respSelect.toLowerCase() !== pregunta.correcta.toLowerCase()) {
                 Swal.fire('¡Incorrecto! lo ha perdido Todo', '', 'error')
+                dispatch(actualizaAcumu(0))
                 history.replace('/')
             } else if (result.isDenied) {
                 Swal.fire('Tiene la posibilidad de retirarse', '', 'info')
@@ -71,6 +72,9 @@ export default function NivelDos() {
             <h3 className="d-flex justify-content-center">
                 SEGUNDA PREGUNTA
             </h3>
+            <h5 className="d-flex justify-content-center">
+                por $500.000
+            </h5>
             <br />
             <hr />
             <h4 className="d-flex justify-content-center">
