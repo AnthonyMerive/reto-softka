@@ -10,12 +10,6 @@ export const ganadorReducer = (state = initialState, action) => {
                 ganador: action.payload
             }
 
-        case typesGanador.mostrarGanadores:
-
-            return {
-                ganadores: action.payload
-            }
-
         case typesGanador.reset:
             return {
             }

@@ -2,6 +2,7 @@ import {createStore, combineReducers, compose, applyMiddleware } from 'redux';
 // import { obtenerLocalStorage, guardarLocalStorage}from '../localStorage'
 import thunk from 'redux-thunk';
 import { acumuladoReducer } from '../reducers/acumuladoReducer';
+import { ganadoresReducer } from '../reducers/ganadoresReducer';
 import { ganadorReducer } from '../reducers/ganadorReducer';
 import { loginReducer } from '../reducers/loginReducer';
 import { preguntaReducer } from '../reducers/preguntasReducer';
@@ -15,7 +16,8 @@ const reducers = combineReducers({
     register: registerReducer,
     preguntaNum: preguntaReducer,
     acumuladoVal: acumuladoReducer,
-    ganador: ganadorReducer
+    ganador: ganadorReducer,
+    ganadores: ganadoresReducer
 
 })
 

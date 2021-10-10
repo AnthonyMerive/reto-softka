@@ -1,8 +1,9 @@
-import React, { useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { mostrarGanadorAsincronico } from '../actions/actionGanador'
 import { actualizaNumPreg } from '../actions/actualizaNumPreg'
+import { mostrarGanadoresAsincronico } from '../actions/actionGanador'
 
 export default function Inicio() {
 
@@ -14,10 +15,9 @@ export default function Inicio() {
     const acumulado = acumu.acumulado
 
     useEffect(() => {
-
+        dispatch(mostrarGanadoresAsincronico())
         dispatch(actualizaNumPreg(0))
         dispatch(mostrarGanadorAsincronico(correo))
-
     }, [])
 
 
@@ -28,14 +28,14 @@ export default function Inicio() {
                     ¡HOLA {nombre.toUpperCase()}!
                 </h3>
             }
-            {acumulado === 0?
+            {acumulado === 0 ?
                 <h4 className="d-flex justify-content-center">
                     Bienvenido al juego donde siempre ganaras algo de dinero
                 </h4>
                 :
                 <h4 className="d-flex justify-content-center">
-                Ya tienes ${acumulado} acumulados no puedes jugar de nuevo
-            </h4>
+                    Ya tienes ${acumulado} acumulados no puedes jugar de nuevo
+                </h4>
             }
             <hr />
             <h4 className="d-flex justify-content-center">

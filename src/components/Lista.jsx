@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { mostrarGanadoresAsincronico } from '../actions/actionGanador'
+import { useDispatch, useSelector } from 'react-redux'
+import { actualizaNumPreg } from '../actions/actualizaNumPreg'
 
 export default function Lista() {
 
     const dispatch = useDispatch()
+    const ganadores = useSelector(store => store.ganadores.ganadores)
 
     useEffect(() => {
-        dispatch(mostrarGanadoresAsincronico())
-    }, [])
+        dispatch(actualizaNumPreg(6))
+    }, [dispatch])
 
     return (<>
 
@@ -22,12 +23,14 @@ export default function Lista() {
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
+                {ganadores.map((ganador,index) => 
+                    <tr key={index}>
+                        <th scope="row">{index+1}</th>
+                        <td>{ganador.nombre}</td>
+                        <td>{ganador.correo}</td>
+                        <td>{ganador.acumulado}</td>
+                    </tr>
+                )}
             </tbody>
         </table>
 

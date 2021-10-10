@@ -47,6 +47,13 @@ export default function Navbar(props) {
                                 >
                                     <StyledSpan onClick={handleCerrarSesion} className="nav-link">Cerrar sesión</StyledSpan>
                                 </Link>
+                                : numeroPreg ===6?
+                                <Link
+                                    to="/"
+                                    style={{ textDecoration: 'none', color: 'white' }}
+                                >
+                                    <StyledSpan className="nav-link">Volver</StyledSpan>
+                                </Link>
                                 :
                                 <span className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">${acumulado}</span>
                             }
