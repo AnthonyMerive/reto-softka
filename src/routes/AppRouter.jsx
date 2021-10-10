@@ -17,7 +17,7 @@ import Lobby from '../components/Lobby';
 
 export default function AppRouter() {
 
-    let auth = true;
+    let auth = false;
 
     return (<Router>
 

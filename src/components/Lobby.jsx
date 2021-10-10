@@ -4,7 +4,15 @@ import Login from './Login'
 
 export default function Lobby() {
     return (<>
-            <Register />
-            <Login />
-        </>)
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <Register />
+                </div>
+                <div class="col">
+                    <Login />
+                </div>
+            </div>
+        </div>
+    </>)
 }
