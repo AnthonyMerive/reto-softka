@@ -47,7 +47,7 @@ export default function NivelUno() {
             confirmButtonText: 'Si',
         }).then((result) => {
             if (result.isConfirmed) {
-                Swal.fire('No tenia que perder', '', 'info')
+                Swal.fire('No tenia nada que perder', '', 'info')
                 history.replace('/')
             } else if (result.isDenied) {
                 Swal.fire('Asi es, no se rinda', '', 'success')
