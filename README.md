@@ -1,8 +1,3 @@
-<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889426/pagina1_hgkgvu.png" alt="vista previa1"/>
-<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889425/pagina4_kwpljz.png" alt="vista previa2"/>
-<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889425/pagina2_isz9da.png" alt="vista previa3"/>
-<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889425/pagina3_l3xpmx.png" alt="vista previa4"/>
-
 # URL de despliegue
 
 https://preguntasyrespuestas-reto.netlify.app/
@@ -58,6 +53,14 @@ Si por algun motivo no se instalan las dependencias correctamente, use los sigui
 - Instala sweetalert2
 ### `npm i sweetalert2` 
 ### `yarn add sweetalert2` 
+
+
+# Imagenes Previas
+
+<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889426/pagina1_hgkgvu.png" alt="vista previa1"/>
+<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889425/pagina4_kwpljz.png" alt="vista previa2"/>
+<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889425/pagina2_isz9da.png" alt="vista previa3"/>
+<img src="https://res.cloudinary.com/df8qzqymf/image/upload/v1633889425/pagina3_l3xpmx.png" alt="vista previa4"/>
 
 
 
