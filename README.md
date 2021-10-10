@@ -38,8 +38,7 @@ Si por algun motivo no se instalan las dependencias correctamente, use los sigui
 - styled-components
 - sweetalert2
 
-### `npm i firebase` 
-### `yarn add firebase` 
+### `npm i firebase` ### `yarn add firebase` 
 
 Instala Firebase
 
