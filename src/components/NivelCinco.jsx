@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Swal from 'sweetalert2';
 import data from '../data.json';
 import { useHistory } from "react-router-dom";
@@ -16,9 +16,8 @@ export default function NivelCinco() {
     const correo = usuarioLogeado.correo
     const nombre = usuarioLogeado.displayName
     const acumu = useSelector(store => store.acumuladoVal)
+    let acu = 0
     const acumulado = acumu.acumulado
-
-    const [respuesta, setRespuesta] = useState(null)
 
     const nivel = data.nivel5;
     const preg = parseInt(Math.random() * (6 - 1) + 1);
@@ -27,7 +26,6 @@ export default function NivelCinco() {
 
     const handleRespuesta = (e) => {
         const respSelect = e.target.value;
-        setRespuesta(respSelect);
         Swal.fire({
             title: `Esta seguro de que la respuesta correcta es "${respSelect}"`,
             showCancelButton: false,
@@ -35,9 +33,11 @@ export default function NivelCinco() {
             confirmButtonText: 'Si',
         }).then((result) => {
             if (result.isConfirmed & respSelect.toLowerCase() === pregunta.correcta.toLowerCase()) {
-                Swal.fire('¡Correcto!', '', 'success')
+                Swal.fire('¡Correcto! ha ganado el juego', '', 'success')
                 dispatch(actualizaAcumu(100000000))
-                history.replace('/pregunta5')
+                acu = 100000000
+                dispatch(enviarGanadores(acu, nombre, correo))
+                history.replace('/')
             } else if (result.isConfirmed & respSelect.toLowerCase() !== pregunta.correcta.toLowerCase()) {
                 Swal.fire('¡Incorrecto! lo ha perdido Todo', '', 'error')
                 dispatch(actualizaAcumu(0))
@@ -55,12 +55,8 @@ export default function NivelCinco() {
             showDenyButton: true,
             confirmButtonText: 'Si',
         }).then((result) => {
-            if (result.isConfirmed & respuesta.toLowerCase() === pregunta.correcta.toLowerCase()) {
-                Swal.fire('Que pena, habia seleccionado la respuesta correcta', '', 'info')
-                dispatch(enviarGanadores(acumulado, nombre, correo))
-                history.replace('/')
-            } else if (result.isConfirmed & respuesta.toLowerCase() !== pregunta.correcta.toLowerCase()) {
-                Swal.fire('Sabia decisión', '', 'success')
+            if (result.isConfirmed ) {
+                Swal.fire(`Acumulo $${acumulado}`, '', 'info')
                 dispatch(enviarGanadores(acumulado, nombre, correo))
                 history.replace('/')
             } else if (result.isDenied) {
@@ -144,9 +140,7 @@ export default function NivelCinco() {
             </div>
             <hr />
             <div className="d-flex align-items-center flex-column">
-                {respuesta &&
                     <button onClick={handleRetirar} type="button" className="btn btn-outline-danger">RETIRARSE</button>
-                }
             </div>
         </div>
 

@@ -2,236 +2,236 @@
     "nivel1": [
         {
             "id": 1,
-            "pregunta": "n1-pregunta-1",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta B"
+            "pregunta": "Si un día decidieras sembrar semillas de Quercus robur. ¿Qué crecería?",
+            "respuesta1": "Arbol",
+            "respuesta2": "Flores",
+            "respuesta3": "Verduras",
+            "respuesta4": "Grano",
+            "correcta": "Arbol"
         },
         {
             "id": 2,
-            "pregunta": "n1-pregunta-2",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta D"
+            "pregunta": "¿Los neurólogos creen que la corteza prefrontal del cerebro se activa cuando haces qué?",
+            "respuesta1": "Tienes un ataque de pánico",
+            "respuesta2": "Recuerdas un nombre",
+            "respuesta3": "Entiendes una broma",
+            "respuesta4": "Escuchas música",
+            "correcta": "Entiendes una broma"
         },
         {
             "id": 3,
-            "pregunta": "n1-pregunta-3",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Quién fue el primero en recibir un premio Nobel de Literatura?",
+            "respuesta1": "Novelista",
+            "respuesta2": "Dramaturgo",
+            "respuesta3": "Poeta",
+            "respuesta4": "Ensayista",
+            "correcta": "Poeta"
         },
         {
             "id": 4,
-            "pregunta": "n1-pregunta-4",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta C"
+            "pregunta": "¿Qué elemento químico fue nombrado en honor a un malvado duende del subsuelo?",
+            "respuesta1": "Hafnio",
+            "respuesta2": "Cobalto",
+            "respuesta3": "Berilio",
+            "respuesta4": "Telurio",
+            "correcta": "Cobalto"
         },
         {
             "id": 5,
-            "pregunta": "n1-pregunta-5",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Cuántos mares rodean la península de los Balcanes?",
+            "respuesta1": "3",
+            "respuesta2": "4",
+            "respuesta3": "5",
+            "respuesta4": "6",
+            "correcta": "6"
         }
     ],
     "nivel2": [
         {
             "id": 1,
-            "pregunta": "n2-pregunta-1",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta B"
+            "pregunta": "¿Qué novela escribió James Fenimore Cooper en una discusión con su esposa?",
+            "respuesta1": "Precaucion",
+            "respuesta2": "Los pioneros",
+            "respuesta3": "El último mohicano",
+            "respuesta4": "El cazador de ciervos",
+            "correcta": "Precaucion"
         },
         {
             "id": 2,
-            "pregunta": "n2-pregunta-2",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta D"
+            "pregunta": "¿Qué tipo de caballería estaba destinada tanto para acciones militares, ecuestres y patrullajes?",
+            "respuesta1": "Coracero",
+            "respuesta2": "Ulano",
+            "respuesta3": "Dragon",
+            "respuesta4": "Húsar",
+            "correcta": "Dragon"
         },
         {
             "id": 3,
-            "pregunta": "n2-pregunta-3",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Qué nombre nunca ha adoptado un papa?",
+            "respuesta1": "Valentín",
+            "respuesta2": "Eugenio",
+            "respuesta3": "Gregorio",
+            "respuesta4": "Jorge",
+            "correcta": "Jorge"
         },
         {
             "id": 4,
-            "pregunta": "n2-pregunta-4",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta C"
+            "pregunta": "¿Cuál de estas leyes es falsa en Chile?",
+            "respuesta1": "Prohibido tocar las campanas para incitar al pueblo a sublevarse",
+            "respuesta2": "Prohibido andar en carruaje donde haya una multitud de gente",
+            "respuesta3": "Prohibido poner plantas con maceteros en tus balcones o ventanas",
+            "respuesta4": "Prohibido montar en burros o mulas estando bajo los efectos del alcohol",
+            "correcta": "Prohibido montar en burros o mulas estando bajo los efectos del alcohol"
         },
         {
             "id": 5,
-            "pregunta": "n2-pregunta-5",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿De qué murió el compositor Chopin?",
+            "respuesta1": "De un ataque al corazón",
+            "respuesta2": "De tuberculosis",
+            "respuesta3": "De insuficiencia renal aguda",
+            "respuesta4": "De un cáncer estomacal",
+            "correcta": "De tuberculosis"
         }
     ],
     "nivel3": [
         {
             "id": 1,
-            "pregunta": "n3-pregunta-1",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta B"
+            "pregunta": "¿Qué famosa estrella musical fue conocida como Baby Frances Gumm en la fase inicial de su carrera?",
+            "respuesta1": "Ginger Rogers",
+            "respuesta2": "Deanna Durbin",
+            "respuesta3": "Doris Day",
+            "respuesta4": "Judy Garland",
+            "correcta": "Judy Garland"
         },
         {
             "id": 2,
-            "pregunta": "n3-pregunta-2",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta D"
+            "pregunta": " ¿Cuál es el título del poema de Lewis Carroll compuesto por palabras sinsentido?",
+            "respuesta1": "Gibberish",
+            "respuesta2": "Jabberwocky",
+            "respuesta3": "Twaddle",
+            "respuesta4": "Gobbledygook",
+            "correcta": "Jabberwocky"
         },
         {
             "id": 3,
-            "pregunta": "n3-pregunta-3",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Cuál de estas operetas de Gilbert & Sullivan se estrenó primero?",
+            "respuesta1": "Los gondoleros",
+            "respuesta2": "Los piratas del Penzance",
+            "respuesta3": "El Mikado",
+            "respuesta4": "Los alabarderos de la Casa Real",
+            "correcta": "Los piratas del Penzance"
         },
         {
             "id": 4,
-            "pregunta": "n3-pregunta-4",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta C"
+            "pregunta": "Existen tres ciudades europeas que preservan manuscritos originales de la civilización maya. ¿Cuál de estas ciudades no los tiene?",
+            "respuesta1": "Madrid",
+            "respuesta2": "Dresden",
+            "respuesta3": "París",
+            "respuesta4": "Roma",
+            "correcta": "Roma"
         },
         {
             "id": 5,
-            "pregunta": "n3-pregunta-5",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "En 1718, ¿qué pirata murió en una batalla en la costa del lugar ahora conocido como Carolina del Norte?",
+            "respuesta1": "Calico Jack",
+            "respuesta2": "Barbanegra",
+            "respuesta3": "Bartholomew Roberts",
+            "respuesta4": "Capitán Kidd",
+            "correcta": "Barbanegra"
         }
     ],
     "nivel4": [
         {
             "id": 1,
-            "pregunta": "n4-pregunta-1",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta B"
+            "pregunta": "¿Con qué letra comienza la palabra del tomo 21 de la Enciclopedia Espasa?",
+            "respuesta1": "E",
+            "respuesta2": "F",
+            "respuesta3": "G",
+            "respuesta4": "H",
+            "correcta": "E"
         },
         {
             "id": 2,
-            "pregunta": "n4-pregunta-2",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta D"
+            "pregunta": "De acuerdo con la Oficina de Referencia de la Población (Population Reference Bureau). ¿Cuál es el número aproximado de personas que han vivido en la Tierra?",
+            "respuesta1": "108 000 millones",
+            "respuesta2": "180 000 millones",
+            "respuesta3": "1 110 000 millones",
+            "respuesta4": "1 108 000 millones",
+            "correcta": "108 000 millones"
         },
         {
             "id": 3,
-            "pregunta": "n4-pregunta-3",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Quién dio el no-tan-famoso discurso de dos horas que precedió al Discurso de Gettysburg de dos minutos de Abraham Lincoln?",
+            "respuesta1": "Wendell Phillips",
+            "respuesta2": "Daniel Webster",
+            "respuesta3": "Robert G. Ingersoll",
+            "respuesta4": "Edward Everett",
+            "correcta": "Edward Everett"
         },
         {
             "id": 4,
-            "pregunta": "n4-pregunta-4",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta C"
+            "pregunta": "¿Qué estrella de Hollywood patentó, en la Segunda Guerra Mundial, un sistema para que no se detectaran los torpedos?",
+            "respuesta1": "Hedy Lamarr",
+            "respuesta2": "Bette Davis",
+            "respuesta3": "Joan Blondell",
+            "respuesta4": "Lauren Bacall",
+            "correcta": "Hedy Lamarr"
         },
         {
             "id": 5,
-            "pregunta": "n4-pregunta-5",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Cuál era el nombre completo de Grace Kelly?",
+            "respuesta1": "Ann Grace Kelly",
+            "respuesta2": "Grace Maria Kelly",
+            "respuesta3": "Grace Patrice Kelly",
+            "respuesta4": "Grace Sue Kelly",
+            "correcta": "Grace Patrice Kelly"
         }
     ],
     "nivel5": [
         {
             "id": 1,
-            "pregunta": "n5-pregunta-1",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta B"
+            "pregunta": "La gente que tiene una reacción física importante hacia el arte hermoso, ¿qué tipo de síndrome sufre?",
+            "respuesta1": "Sindrome de Proust",
+            "respuesta2": "Sindrome de Jerusalén",
+            "respuesta3": "Sindrome de Stendhal",
+            "respuesta4": "Sindrome de Beckett",
+            "correcta": "Sindrome de Stendhal"
         },
         {
             "id": 2,
-            "pregunta": "n5-pregunta-2",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta D"
+            "pregunta": "¿En la corte de qué rey pasó Leonardo Da Vinci los dos últimos años de su vida?",
+            "respuesta1": "Enrique IV",
+            "respuesta2": "Carlos III",
+            "respuesta3": "Luis XII",
+            "respuesta4": "Francisco I",
+            "correcta": "Francisco I"
         },
         {
             "id": 3,
-            "pregunta": "n5-pregunta-3",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "El mercader veneciano Marco Polo fue oficial en la corte de…",
+            "respuesta1": "Iván el Terrible",
+            "respuesta2": "Kumiai Khan",
+            "respuesta3": "Tameriano el magnífico",
+            "respuesta4": "Saladino",
+            "correcta": "Kumiai Khan"
         },
         {
             "id": 4,
-            "pregunta": "n5-pregunta-4",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta C"
+            "pregunta": "Aunque ni él ni su mujer tocaron jamás un interruptor de la luz por miedo a ser electrocutados, ¿quién fue el primer presidente de los Estados Unidos en tener electricidad en la Casa Blanca?",
+            "respuesta1": "Ulysses S. Grant",
+            "respuesta2": "Benjamin Harrison",
+            "respuesta3": "Chester A. Arthur",
+            "respuesta4": "Andrew Jackson",
+            "correcta": "Benjamin Harrison"
         },
         {
             "id": 5,
-            "pregunta": "n5-pregunta-5",
-            "respuesta1": "respuesta A",
-            "respuesta2": "respuesta B",
-            "respuesta3": "respuesta C",
-            "respuesta4": "respuesta D",
-            "correcta": "respuesta A"
+            "pregunta": "¿Qué santo fundó la Abadía de Montecasino?",
+            "respuesta1": "Benedicto",
+            "respuesta2": "Bernardo",
+            "respuesta3": "Buenaventura",
+            "respuesta4": "Bonifacio",
+            "correcta": "Benedicto"
         }
     ]
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Swal from 'sweetalert2';
 import data from '../data.json';
 import { useHistory } from "react-router-dom";
@@ -18,16 +18,13 @@ export default function NivelCuatro() {
     const acumu = useSelector(store => store.acumuladoVal)
     const acumulado = acumu.acumulado
 
-    const [respuesta, setRespuesta] = useState(null)
-
     const nivel = data.nivel4;
     const preg = parseInt(Math.random() * (6 - 1) + 1);
 
-    const pregunta = nivel.find(pregunta => pregunta.id === preg);
+    const pregunta = nivel.find(pregunta => pregunta.id === preg)
 
     const handleRespuesta = (e) => {
         const respSelect = e.target.value;
-        setRespuesta(respSelect);
         Swal.fire({
             title: `Esta seguro de que la respuesta correcta es "${respSelect}"`,
             showCancelButton: false,
@@ -55,12 +52,8 @@ export default function NivelCuatro() {
             showDenyButton: true,
             confirmButtonText: 'Si',
         }).then((result) => {
-            if (result.isConfirmed & respuesta.toLowerCase() === pregunta.correcta.toLowerCase()) {
-                Swal.fire('Que pena, habia seleccionado la respuesta correcta', '', 'info')
-                dispatch(enviarGanadores(acumulado, nombre, correo))
-                history.replace('/')
-            } else if (result.isConfirmed & respuesta.toLowerCase() !== pregunta.correcta.toLowerCase()) {
-                Swal.fire('Sabia decisión', '', 'success')
+            if (result.isConfirmed ) {
+                Swal.fire(`Acumulo $${acumulado}`, '', 'info')
                 dispatch(enviarGanadores(acumulado, nombre, correo))
                 history.replace('/')
             } else if (result.isDenied) {
@@ -143,9 +136,7 @@ export default function NivelCuatro() {
             </div>
             <hr />
             <div className="d-flex align-items-center flex-column">
-                {respuesta &&
                     <button onClick={handleRetirar} type="button" className="btn btn-outline-danger">RETIRARSE</button>
-                }
             </div>
         </div>
 

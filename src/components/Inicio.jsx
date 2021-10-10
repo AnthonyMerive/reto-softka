@@ -32,10 +32,15 @@ export default function Inicio() {
                 <h4 className="d-flex justify-content-center">
                     Bienvenido al juego donde siempre ganaras algo de dinero
                 </h4>
-                :
-                <h4 className="d-flex justify-content-center">
-                    Ya tienes ${acumulado} acumulados no puedes jugar de nuevo
-                </h4>
+                : acumulado === 100000000 ?
+                    <h4 className="d-flex justify-content-center">
+                        Usted ha respondido todas las preguntas
+                    </h4>
+                    :
+                    <h4 className="d-flex justify-content-center">
+                        Ya tienes ${acumulado} acumulados no puedes jugar de nuevo
+                    </h4>
+
             }
             <hr />
             <h4 className="d-flex justify-content-center">
