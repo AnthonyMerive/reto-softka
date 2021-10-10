@@ -1,15 +1,13 @@
 import { types } from "../types/types"
 
-const initialState= []
-
-export const registerReducer = (state = initialState, action) => {
+export const registerReducer = (state = {}, action) => {
     switch (action.type) {
         case types.register:
 
             return {
-                uid: action.payload.uid,
-                correo: action.payload.email,
-                displayName: action.payload.displayName,
+                uid: action.payload.name,
+                correo: action.payload.password,
+                displayName: action.payload.email,
 
             }
 

@@ -2,14 +2,21 @@ import React, { useEffect, useState } from 'react'
 import Swal from 'sweetalert2';
 import data from '../data.json';
 import { useHistory } from "react-router-dom";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { actualizaNumPreg } from '../actions/actualizaNumPreg';
 import { actualizaAcumu } from '../actions/actualizaAcumulado';
+import { enviarGanadores } from '../actions/actionGanador';
 
 export default function NivelCuatro() {
 
     const history = useHistory();
     const dispatch = useDispatch();
+
+    const usuarioLogeado = useSelector(store => store.login)
+    const correo = usuarioLogeado.correo
+    const nombre = usuarioLogeado.displayName
+    const acumu = useSelector(store => store.acumuladoVal)
+    const acumulado = acumu.acumulado
 
     const [respuesta, setRespuesta] = useState(null)
 
@@ -50,9 +57,11 @@ export default function NivelCuatro() {
         }).then((result) => {
             if (result.isConfirmed & respuesta.toLowerCase() === pregunta.correcta.toLowerCase()) {
                 Swal.fire('Que pena, habia seleccionado la respuesta correcta', '', 'info')
+                dispatch(enviarGanadores(acumulado, nombre, correo))
                 history.replace('/')
             } else if (result.isConfirmed & respuesta.toLowerCase() !== pregunta.correcta.toLowerCase()) {
                 Swal.fire('Sabia decisión', '', 'success')
+                dispatch(enviarGanadores(acumulado, nombre, correo))
                 history.replace('/')
             } else if (result.isDenied) {
                 Swal.fire('Asi es, no se rinda', '', 'success')

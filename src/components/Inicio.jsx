@@ -1,26 +1,42 @@
-import React, { useEffect } from 'react'
+import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { mostrarGanadorAsincronico } from '../actions/actionGanador'
 import { actualizaNumPreg } from '../actions/actualizaNumPreg'
 
 export default function Inicio() {
 
     const dispatch = useDispatch()
+    const usuarioLogeado = useSelector(store => store.login)
+    const correo = usuarioLogeado.correo
+    const nombre = usuarioLogeado.displayName
     const acumu = useSelector(store => store.acumuladoVal)
     const acumulado = acumu.acumulado
 
     useEffect(() => {
+
         dispatch(actualizaNumPreg(0))
-    }, [dispatch])
+        dispatch(mostrarGanadorAsincronico(correo))
+
+    }, [])
+
 
     return (<>
         <div className="container mt-5">
-            <h3 className="d-flex justify-content-center">
-                ¡HOLA {'USUARIO'}!
-            </h3>
-            <h4 className="d-flex justify-content-center">
-                Bienvenido al juego que donde siempre ganaras algo de dinero
+            {nombre !== undefined &&
+                <h3 className="d-flex justify-content-center">
+                    ¡HOLA {nombre.toUpperCase()}!
+                </h3>
+            }
+            {acumulado === 0?
+                <h4 className="d-flex justify-content-center">
+                    Bienvenido al juego donde siempre ganaras algo de dinero
+                </h4>
+                :
+                <h4 className="d-flex justify-content-center">
+                Ya tienes ${acumulado} acumulados no puedes jugar de nuevo
             </h4>
+            }
             <hr />
             <h4 className="d-flex justify-content-center">
                 REGLAS
@@ -63,7 +79,7 @@ export default function Inicio() {
             </ul>
             <hr />
             {
-                acumulado===0&&
+                !(acumulado > 0) &&
                 <h4 className="d-flex justify-content-center">
                     <Link to="/pregunta1">{'->COMENZAR<-'}</Link>
                 </h4>

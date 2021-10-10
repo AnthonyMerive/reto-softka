@@ -30,7 +30,7 @@ export default function Register() {
                     Registrate
                 </h4>
                 <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Nombre Completo</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Nombre Completo</label>
                     <input
                         type="text"
                         className="form-control"
@@ -42,7 +42,7 @@ export default function Register() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Correo</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label">Correo</label>
                     <input
                         type="email"
                         className="form-control"
@@ -54,7 +54,7 @@ export default function Register() {
                     />
                 </div>
                 <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">Contraseña</label>
+                    <label htmlFor="exampleInputPassword1" className="form-label">Contraseña</label>
                     <input
                         type="password"
                         className="form-control"
