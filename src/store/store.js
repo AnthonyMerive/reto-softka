@@ -3,12 +3,13 @@ import {createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { acumuladoReducer } from '../reducers/acumuladoReducer';
 import { preguntaReducer } from '../reducers/preguntasReducer';
+import { registerReducer } from '../reducers/registerReducer';
 
 
 const reducers = combineReducers({
 
     // login: loginReducer,
-    // register: registerReducer,
+    register: registerReducer,
     preguntaNum: preguntaReducer,
     acumuladoVal: acumuladoReducer,
 
