@@ -30,35 +30,31 @@ ejecute el comando, luego la pagina se desplegara en la direccion local: [http:/
 
 Si por algun motivo no se instalan las dependencias correctamente, use los siguientes comandos para instalarlas, las dependencias usadas son:
 
+- Instala Firebase
 ### `npm i firebase` 
 ### `yarn add firebase` 
 
-Instala Firebase
-
+- Instala react-redux
 ### `npm i react-redux` 
 ### `yarn add react-redux` 
 
-Instala react-redux
-
+- Instala react-router-dom
 ### `npm i react-router-dom` 
 ### `yarn add react-router-dom` 
 
-Instala react-router-dom
-
+- Instala redux-thunk
 ### `npm i redux-thunk` 
 ### `yarn add redux-thunk` 
 
-Instala redux-thunk
-
+- Instala styled-components
 ### `npm i styled-components` 
 ### `yarn add styled-components` 
 
-Instala styled-components
-
+- Instala sweetalert2
 ### `npm i sweetalert2` 
 ### `yarn add sweetalert2` 
 
-Instala sweetalert2
+
 
 
 
